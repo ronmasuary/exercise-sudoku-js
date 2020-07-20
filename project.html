@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="project.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body onload="loadSite()">
+    <div id="login">
+        <div id="box">
+            <h2>Sudoku</h2>
+            <input id="username" type="text" placeholder="User Name"></br>
+            <span id="wrongUsername">Check your ID</span></br>
+            <input id="password" type="password" placeholder="Password"></br>
+            <span id="wrongPassword">Check your Password</span></br>
+            <div id="align">
+                <button id="enter" onclick="enter()">Enter</button>
+            </div>
+        </div>
+    </div>  
+    <div id="difficulty">
+        <div id="box">
+            <h2>Welcome <span>abcd</span></h2>
+            <p>Choose your difficulty level</p>
+            <div id="align">
+                <button id="difficulty1" onclick="difficulty1()">1</button>
+                <button id="difficulty2" onclick="difficulty2()">2</button>
+                <button id="difficulty3" onclick="difficulty3()">3</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <h1>Good Luck</h1>
+        <table>
+            <tr>
+                <td><input id="t00" type="text" maxlength="1"></td>
+                <td><input id="t01" type="text" maxlength="1"></td>
+                <td><input id="t02" type="text" maxlength="1"></td>
+                <td><input id="t03" type="text" maxlength="1"></td>
+                <td><input id="t04" type="text" maxlength="1"></td>
+                <td><input id="t05" type="text" maxlength="1"></td>
+                <td><input id="t06" type="text" maxlength="1"></td>
+                <td><input id="t07" type="text" maxlength="1"></td>
+                <td><input id="t08" type="text" maxlength="1"></td>
+            </tr>
+            <tr>
+                <td><input id="t10" type="text" maxlength="1"></td>
+                <td><input id="t11" type="text" maxlength="1"></td>
+                <td><input id="t12" type="text" maxlength="1"></td>
+                <td><input id="t13" type="text" maxlength="1"></td>
+                <td><input id="t14" type="text" maxlength="1"></td>
+                <td><input id="t15" type="text" maxlength="1"></td>
+                <td><input id="t16" type="text" maxlength="1"></td>
+                <td><input id="t17" type="text" maxlength="1"></td>
+                <td><input id="t18" type="text" maxlength="1"></td>
+            </tr>
+            <tr>
+                <td><input id="t20" type="text" maxlength="1"></td>
+                <td><input id="t21" type="text" maxlength="1"></td>
+                <td><input id="t22" type="text" maxlength="1"></td>
+                <td><input id="t23" type="text" maxlength="1"></td>
+                <td><input id="t24" type="text" maxlength="1"></td>
+                <td><input id="t25" type="text" maxlength="1"></td>
+                <td><input id="t26" type="text" maxlength="1"></td>
+                <td><input id="t27" type="text" maxlength="1"></td>
+                <td><input id="t28" type="text" maxlength="1"></td>
+            </tr>
+            <tr>
+                <td><input id="t30" type="text" maxlength="1"></td>
+                <td><input id="t31" type="text" maxlength="1"></td>
+                <td><input id="t32" type="text" maxlength="1"></td>
+                <td><input id="t33" type="text" maxlength="1"></td>
+                <td><input id="t34" type="text" maxlength="1"></td>
+                <td><input id="t35" type="text" maxlength="1"></td>
+                <td><input id="t36" type="text" maxlength="1"></td>
+                <td><input id="t37" type="text" maxlength="1"></td>
+                <td><input id="t38" type="text" maxlength="1"></td>
+            </tr>
+            <tr>
+                <td><input id="t40" type="text" maxlength="1"></td>
+                <td><input id="t41" type="text" maxlength="1"></td>
+                <td><input id="t42" type="text" maxlength="1"></td>
+                <td><input id="t43" type="text" maxlength="1"></td>
+                <td><input id="t44" type="text" maxlength="1"></td>
+                <td><input id="t45" type="text" maxlength="1"></td>
+                <td><input id="t46" type="text" maxlength="1"></td>
+                <td><input id="t47" type="text" maxlength="1"></td>
+                <td><input id="t48" type="text" maxlength="1"></td>
+            </tr>
+            <tr>
+                <td><input id="t50" type="text" maxlength="1"></td>
+                <td><input id="t51" type="text" maxlength="1"></td>
+                <td><input id="t52" type="text" maxlength="1"></td>
+                <td><input id="t53" type="text" maxlength="1"></td>
+                <td><input id="t54" type="text" maxlength="1"></td>
+                <td><input id="t55" type="text" maxlength="1"></td>
+                <td><input id="t56" type="text" maxlength="1"></td>
+                <td><input id="t57" type="text" maxlength="1"></td>
+                <td><input id="t58" type="text" maxlength="1"></td>
+            </tr>
+            <tr>
+                <td><input id="t60" type="text" maxlength="1"></td>
+                <td><input id="t61" type="text" maxlength="1"></td>
+                <td><input id="t62" type="text" maxlength="1"></td>
+                <td><input id="t63" type="text" maxlength="1"></td>
+                <td><input id="t64" type="text" maxlength="1"></td>
+                <td><input id="t65" type="text" maxlength="1"></td>
+                <td><input id="t66" type="text" maxlength="1"></td>
+                <td><input id="t67" type="text" maxlength="1"></td>
+                <td><input id="t68" type="text" maxlength="1"></td>
+            </tr>
+            <tr>
+                <td><input id="t70" type="text" maxlength="1"></td>
+                <td><input id="t71" type="text" maxlength="1"></td>
+                <td><input id="t72" type="text" maxlength="1"></td>
+                <td><input id="t73" type="text" maxlength="1"></td>
+                <td><input id="t74" type="text" maxlength="1"></td>
+                <td><input id="t75" type="text" maxlength="1"></td>
+                <td><input id="t76" type="text" maxlength="1"></td>
+                <td><input id="t77" type="text" maxlength="1"></td>
+                <td><input id="t78" type="text" maxlength="1"></td>
+            </tr>
+            <tr>
+                <td><input id="t80" type="text" maxlength="1"></td>
+                <td><input id="t81" type="text" maxlength="1"></td>
+                <td><input id="t82" type="text" maxlength="1"></td>
+                <td><input id="t83" type="text" maxlength="1"></td>
+                <td><input id="t84" type="text" maxlength="1"></td>
+                <td><input id="t85" type="text" maxlength="1"></td>
+                <td><input id="t86" type="text" maxlength="1"></td>
+                <td><input id="t87" type="text" maxlength="1"></td>
+                <td><input id="t88" type="text" maxlength="1"></td>
+            </tr>
+        </table>
+        <div id="align">
+            <button id="finish" onclick="finish()">Finish</button>
+          
+          <div id="finishGame">
+        <div id="box">
+            <h2>
+          <span id="wrong">sorry, wrong answer</span>
+          <span id="right">congratulations! good game!</span></h2>
+            <div id="align">
+                <button id="again" onclick="again()">Play Again</button> 
+                <button id="changeLevel" onclick="enter()">change level</button>
+            </div>
+        </div>
+    </div>
+          
+          
+          
+            <button id="again" onclick="again()">Play Again</button>
+        </div>
+        <script src="project.js"></script>
+</body>
+
+</html>
